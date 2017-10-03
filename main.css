@@ -1,0 +1,98 @@
+html {
+	overflow: hidden;
+	height: 100%;
+}
+
+body {
+	background-color: #E3F1DF;
+	padding: 0;
+	height: 100%;
+	overflow: auto;
+}
+
+header {
+	background-color: #00402F;
+	width:100%;
+	margin-top: 2.5rem;	
+}
+
+.container {
+	padding: 2.5rem;
+}
+
+h3 {
+	/*color: #1B735C;
+	font-family: 'Bodoni MT', Palatino, serif;*/
+	margin-bottom: 1.5rem;
+}
+
+#job-stuff {
+	margin-top: 3rem;
+}
+
+h4 ul {
+    list-style-type: none;
+}
+
+h4 li {
+    display: inline;
+    padding: 1.5rem;
+}
+
+h4 li:first-child {
+	padding-left: 0rem;
+    margin-left: -4rem; 
+}
+
+ul {
+    list-style-type: square;
+}
+
+#papers {
+	margin-left: -2rem;
+	margin-top: 2rem;
+}
+
+h5 {
+	margin-top: 2rem;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+section {
+	padding: 1rem;
+}
+
+.hrule{
+	background-color: #00402F;
+	padding: 0.05rem;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+#name {
+	color: #FFF;
+}
+
+#photo-frame {
+	text-align: center;
+}
+
+#photo {
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+}
+
+#cv {
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+
+

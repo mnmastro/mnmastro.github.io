@@ -90,9 +90,13 @@ section {
     max-height: 300px;
 }
 
-#cv {
-	margin-top: 2.5rem;
-	margin-bottom: 2.5rem;
+
+h4#job-stuff a {
+	white-space: nowrap;
 }
 
+h4#job-stuff li {
+	display: inline-block;
+	padding-right: 1rem;
+}
 

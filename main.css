@@ -4,14 +4,15 @@ html {
 }
 
 body {
-	background-color: #E3F1DF;
+	background-color: #DFE1EA;
 	padding: 0;
 	height: 100%;
 	overflow: auto;
+	font-family:  Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
 header {
-	background-color: #00402F;
+	background-color: #010A4D;
 	width:100%;
 	margin-top: 2.5rem;	
 }
@@ -48,6 +49,11 @@ ul {
     list-style-type: square;
 }
 
+#research {
+	background-color: #DFE1EA;
+	width: 100%;
+}
+
 #papers {
 	margin-left: -2rem;
 	margin-top: 2rem;
@@ -67,7 +73,7 @@ section {
 }
 
 .hrule{
-	background-color: #00402F;
+	background-color: #212A6D;
 	padding: 0.05rem;
 	width: 100%;
 	top: 0;

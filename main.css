@@ -8,7 +8,8 @@ body {
 	padding: 0;
 	height: 100%;
 	overflow: auto;
-	font-family:  Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif
+	font-family: 'Lato', sans-serif;
+	font-size: 16px
 }
 
 header {
@@ -21,14 +22,22 @@ header {
 	padding: 2.5rem;
 }
 
+h1 {
+	font-family: 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
 h3 {
-	/*color: #1B735C;
-	font-family: 'Bodoni MT', Palatino, serif;*/
+	/*color: #1B735C;*/
+	font-family: 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	margin-bottom: 1.5rem;
 }
 
 #job-stuff {
 	margin-top: 3rem;
+}
+
+h4 {
+	font-family: 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
 h4 ul {
@@ -59,26 +68,63 @@ ul {
 	margin-top: 2rem;
 }
 
+#papers a {
+	font-family: 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
+
+#papers li {
+	padding: 0.5rem;
+}
+
 h5 {
 	margin-top: 2rem;
+	font-size: 16px
 }
 
 a:hover {
     text-decoration: none;
 }
 
-
 section {
 	padding: 1rem;
 }
 
-.hrule{
+.hrule {
 	background-color: #212A6D;
 	padding: 0.05rem;
 	width: 100%;
 	top: 0;
 	left: 0;
 	right: 0;
+}
+
+header .container {
+	padding-bottom: 0.5rem
+}
+
+#title_bar {
+	width: 100%;
+	padding-bottom: 1rem;
+}
+
+#title_bar .hrule {
+	background-color: #ffffff;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	padding: 0.1rem;
+}
+
+#title_bar1 {
+	background-color: #377bb5;
+	padding: 0.4rem;
+	opacity: 0.7
+}
+
+#title_bar2 {
+	background-color: #377bb5;
+	padding: 0.3rem;
+	opacity: 0.2
 }
 
 #name {

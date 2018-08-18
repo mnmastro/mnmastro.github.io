@@ -13,16 +13,26 @@
 	<link rel="stylesheet" type="text/css" href="main.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Lato:300|Raleway|Roboto:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
 </head>
 <body>
-	
 	<header>
 		<div class="container">
 			<div class="row">
-				<h1 class="col-sm-6" id="name">Matthew Mastroeni</h1>
+				<h1 class="col-sm-6" id="header-bar">Matthew Mastroeni</h1>
+				<div class="col-sm-1"></div>
+				<h3 class="col-sm-1"> <a href ="#research" id="header-bar">Research</a> </h3>
+				<div class="col-sm-1"></div>
+				<h3 class="col-sm-1"> <a href ="#teaching" id="header-bar">Teaching</a> </h3>
+				<div class="col-sm-1"></div>
+				<h3 class="col-sm-1"> <a href ="MastroeniCV.pdf" id="header-bar">CV</a> </h3>
 			</div>
 		</div>
 	</header>
+	<div class="hrule" id="title_bar0"></div>
 	<div class="hrule" id="title_bar1"></div>
 	<div class="hrule" id="title_bar2"></div>
 	
@@ -33,15 +43,18 @@
 
 				<section>
 					<h3>About Me</h3>
-					<p>I am a sixth-year Ph.D. student in the department of mathematics at the Univeristy of Illinois at Urbana-Champaign studying commutative algebra.  My advisor is <a href ="https://orion.math.iastate.edu/hschenck/">Hal Schenck</a>, who recently moved to Iowa State University.</p>
+					<p>I am a Postdoctoral Fellow in the department of mathematics at <a href ="https://math.okstate.edu">Oklahoma State University</a> working in commutative algebra.  I received my Ph.D. from the University of Illinois at Urbana-Champaign in 2018, where I was advised by <a href ="https://orion.math.iastate.edu/hschenck/">Hal Schenck</a>.</p>
 				</section>
 
 				<section>
 					<h4>Contact Information</h4>
 					<ul>
-						<li>Email: mastroe2 "at" illinois "dot" edu</li>
-						<li>Office: B13 Coble Hall
+						<li>Email: mmastro "at" okstate "dot" edu</li>
+						<li>Office: 524 Math Sciences Building
 					</ul>
+					<!--
+					Job stuff block.
+
 					<h4 id="job-stuff">
 						<ul>
 							<li> <a href ="MastroeniCV.pdf">CV</a></li>
@@ -49,6 +62,7 @@
 							<li> <a href ="MastroeniTeachingStatement.pdf">Teaching Statement</a></li>
 						<ul>
 					</h4>
+				-->
 				</section>
 
 			</div>
@@ -73,10 +87,35 @@
 			<div class ="col-sm-12">
 			
 			<section>
-				<h3>Research</h3>
+				<h3>Research</h3> 
 				<p>I am interested in computational and homological aspects of commutative algebra, especially the structure of free resolutions.  Most recently, I have been studying the minimal free resolutions of commutative Koszul algebras. </p>
 
 				<ol id ="papers">
+					
+					<!-- Future papers
+					
+					<li>
+						<a>
+							Koszul algebras defined by four quadrics
+						</a>
+						(with P. Mantero) In preparation.
+						<div class = "container" id = "abstract">
+						<div class = "col-sm-9">
+						We prove structure theorems for the defining ideals of Koszul algebras of codimension 2 defined by four quadrics. In the process, we give an affirmative answer to a question of Avramov, Conca, and Iyengar about the Betti numbers of Koszul algebras for all Koszul algebras defined by four quadrics. 
+					</div>
+					</li>
+					<li>
+						<a>
+							Non-Koszul quadratic Gorenstein rings via idealization
+						</a>
+						(with H. Schenck and M. Stillman) In preparation.
+						<div class = "container" id = "abstract">
+						<div class = "col-sm-9">
+						We negatively answer a question of Conca, Rossi, and Valla about whether every quadratic Gorenstein ring of regularity 3 is Koszul by using idealization to construct non-Koszul quadratic Gorenstein rings of regularity 3 for every codimension greater than or equal to 9.
+					</div>
+					</li>
+					-->
+					
 					<li>
 						<a href ="https://arxiv.org/pdf/1801.00763.pdf">
 							Koszul almost complete intersections
@@ -92,7 +131,7 @@
 						<a href ="papers/Matrix Factorizations and Singularity Categories in Codimension Two.pdf">
 							Matrix factorizations and singularity categories in codimension two
 						</a>
-						Proc. Amer. Math. Soc. Accepted.
+						Proc. Amer. Math. Soc. DOI: 10.1090/proc/14132.
 						<div class = "container" id = "abstract">
 						<div class = "col-sm-9">
 						We show how to functorially connect the Eisenbud-Peeva matrix factorizations of a complete intersection of codimension two to its singularity category by way of the graded matrix factorizations of Burke and Walker.
@@ -120,11 +159,24 @@
 
 				<h5>Current Semester</h5>
 				<ul>
-					<li><a href = "https://old.math.illinois.edu/math124/"> Math 124: Finite Mathematics</a></li>
+					<li>Math 2144: Calculus 1</li>
 				</ul>
 			
+				<!--
+				Past semesters at current school.
+
 				<h5>Past Semesters</h5>
 				<ul>
+					<li>Math 124: Finite Mathematics (Spring 2018) </li>
+					<li>Math 221: Calculus 1 (Fall 2016, Fall 2015) </li>
+					<li>Math 231: Calculus 2 (Fall 2017, Spring 2016, Spring 2015, Fall 2014, Spring 2014, Spring 2013, Fall 2012) </li>
+					<li>Math 241: Calculus 3 (Fall 2013) </li>
+				</ul>
+				-->
+
+				<h5>University of Illinois</h5>
+				<ul>
+					<li>Math 124: Finite Mathematics (Spring 2018) </li>
 					<li>Math 221: Calculus 1 (Fall 2016, Fall 2015) </li>
 					<li>Math 231: Calculus 2 (Fall 2017, Spring 2016, Spring 2015, Fall 2014, Spring 2014, Spring 2013, Fall 2012) </li>
 					<li>Math 241: Calculus 3 (Fall 2013) </li>

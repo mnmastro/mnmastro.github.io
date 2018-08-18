@@ -23,12 +23,12 @@ header {
 }
 
 h1 {
-	font-family: 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif
+	font-family: 'Montserrat', 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
 h3 {
 	/*color: #1B735C;*/
-	font-family: 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: 'Montserrat', 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	margin-bottom: 1.5rem;
 }
 
@@ -37,7 +37,7 @@ h3 {
 }
 
 h4 {
-	font-family: 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif
+	font-family: 'Montserrat', 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
 h4 ul {
@@ -69,7 +69,7 @@ ul {
 }
 
 #papers a {
-	font-family: 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif
+	font-family: 'Montserrat', 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
 
@@ -82,7 +82,13 @@ h5 {
 	font-size: 16px
 }
 
+a {
+	color: #DA7E00;
+	font-weight: 650
+}
+
 a:hover {
+	color: #A05D00;
     text-decoration: none;
 }
 
@@ -115,6 +121,12 @@ header .container {
 	padding: 0.1rem;
 }
 
+#title_bar0 {
+	background-color: #FF9402;
+	padding: 0.4rem;
+	opacity: 0.7
+}
+
 #title_bar1 {
 	background-color: #377bb5;
 	padding: 0.4rem;
@@ -127,7 +139,7 @@ header .container {
 	opacity: 0.2
 }
 
-#name {
+#header-bar {
 	color: #FFF;
 }
 

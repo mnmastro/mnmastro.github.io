@@ -54,6 +54,7 @@ h4 li:first-child {
     margin-left: -4rem; 
 }
 
+
 ul {
     list-style-type: square;
 }
@@ -72,9 +73,20 @@ ul {
 	font-family: 'Montserrat', 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
+#papers {
+	counter-reset: paper;
+	list-style: none;
+}
 
 #papers li {
-	padding: 0.5rem;
+	padding-bottom: 1rem;
+	counter-increment: paper;
+}
+
+#papers li::before{
+	margin-left: -2rem;
+	padding-right: 1rem;
+	content: "["counter(paper)"]";
 }
 
 h5 {
@@ -162,6 +174,36 @@ h4#job-stuff a {
 h4#job-stuff li {
 	display: inline-block;
 	padding-right: 1rem;
+}
+
+#teaching h3{
+	margin-bottom: 4rem;
+}
+
+#teaching h5 {
+	font-weight: bold;
+}
+
+#teaching ul {
+	margin-bottom: 3rem;
+}
+
+#courses {
+	margin-top: 1.5rem;
+	margin-bottom: 4rem;
+}
+
+#courses td {
+	border: 1px solid black;
+	padding: 1rem;
+}
+
+#courses td:first-child {
+	width: 50%;
+}
+
+#courses tr:nth-child(odd) {
+  background-color: rgba(55, 123, 181,0.1);
 }
 
 #abstract {

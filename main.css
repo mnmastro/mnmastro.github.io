@@ -9,7 +9,7 @@ body {
 	height: 100%;
 	overflow: auto;
 	font-family: 'Lato', sans-serif;
-	font-size: 16px
+	font-size: 18px
 }
 
 header {
@@ -23,7 +23,7 @@ header {
 }
 
 h1 {
-	font-family: 'Montserrat', 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif
+	font-family: 'Montserrat', 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 h3 {
@@ -70,7 +70,8 @@ ul {
 }
 
 #papers a {
-	font-family: 'Montserrat', 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif
+	font-family: 'Montserrat', 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-decoration: underline;
 }
 
 #papers {
@@ -206,10 +207,14 @@ h4#job-stuff li {
   background-color: rgba(55, 123, 181,0.1);
 }
 
+#cite {
+	padding-left: 1.5rem;
+}
+
 #abstract {
-	font-size: 14px;
+	font-size: 16px;
 	color: #606060;
-	padding-top: 0.5rem;
+	padding-top: 1rem;
 	padding-left: 0.5rem;
-	padding-bottom: 1rem;
+	padding-bottom: 1.5rem;
 }

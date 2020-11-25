@@ -11,12 +11,14 @@
     <link href="bootstrap.min.css" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="main.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+	
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Lato:300|Raleway|Roboto:300" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500" rel="stylesheet">
+
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127860555-1"></script>
@@ -123,15 +125,40 @@
 			
 			<section>
 				<h3>Research</h3> 
-				<p>I am interested in computational and homological aspects of commutative algebra, especially the structure of free resolutions.  Most recently, I have been studying the minimal free resolutions of commutative Koszul algebras. </p>
+				<p>I am interested in computational and homological aspects of commutative algebra, especially the structure of free resolutions, Koszul algebras, linkage, and Rees algebras. </p>
 
 				<ol id ="papers">
 
 					<li>
+						<a href = "https://arxiv.org/pdf/2010.15331.pdf">
+						The InvariantRing package for Macaulay2</a>
+						<div id = "cite">  
+						(with L. Ferraro, F. Galetto, F. Gandini, H. Huang, and X. Ni.) Submitted.
+						</div>
+						<div class = "container" id = "abstract">
+						<div class = "col-sm-9">
+						A significant update to the existing InvariantRing package for Macaulay2.  In addition to expanding and improving the methods of the existing package for actions of finite groups, the updated package adds functionality for computing invariants of diagonal actions of tori and finite abelian groups as well as invariants of arbitrary linearly reductive group actions. 
+					</div>
+					</li>
+
+					<li>
+						<a href = "papers/The Structure of Koszul Algebras Defined by 4 Quadrics.pdf">
+						The structure of Koszul algebras defined by four quadrics</a>
+						<div id = "cite">  
+						(with P. Mantero) Submitted.
+						</div>
+						<div class = "container" id = "abstract">
+						<div class = "col-sm-9">
+						Building on previous work, we prove structure theorems for the defining ideals of all Koszul algebras defined by height two ideals of four quadrics over an algebraically closed field.  As a result, the structure of all Koszul algebras defined by at most four quadrics is well-understood, and we give applications to the Backelin-Roos property.
+					</div>
+					</li>
+
+					<li>
 						<a href = "https://arxiv.org/pdf/1903.08273.pdf">
-							Quadratic Gorenstein rings and the Koszul property II
-						</a>
+						Quadratic Gorenstein rings and the Koszul property II</a>
+						<div id = "cite">  
 						(with H. Schenck and M. Stillman) Submitted.
+						</div>
 						<div class = "container" id = "abstract">
 						<div class = "col-sm-9">
 						With the aim of answering the question for which codimensions \(c\) and regularities \(r\) is every quadratic Gorenstein ring \(R\) with \(\codim R = c\) and \(\reg R = r\) Koszul, we prove that quadratic Gorenstein rings with \(c = r + 1\) are always Koszul, and for all \(c \geq r + 2 \geq 6\), we construct quadratic Gorenstein rings that are not Koszul.
@@ -140,10 +167,10 @@
 
 					<li>
 						<a href = "https://arxiv.org/pdf/1910.01674.pdf">
-							Betti numbers of Koszul algebras defined by four quadrics
-						</a>
-						(with P. Mantero) 
-						J. Pure Appl. Algebra. To appear.
+						Betti numbers of Koszul algebras defined by four quadrics</a>
+						<div id = "cite">  
+						(with P. Mantero) J. Pure Appl. Algebra. To appear.
+						</div>
 						<div class = "container" id = "abstract">
 						<div class = "col-sm-9">
 						We give an affirmative answer to a question of Avramov, Conca, and Iyengar about the Betti numbers of Koszul algebras for all Koszul algebras defined by 4 quadrics.  In the process, we completely describe the Betti tables of Koszul algebras of codimension 2 defined by 4 quadrics and prove a structure theorem for those of multiplicity 2.
@@ -152,10 +179,10 @@
 
 					<li>
 						<a href = "https://arxiv.org/pdf/1903.08265.pdf">
-							Quadratic Gorenstein rings and the Koszul property I
-						</a>
-						(with H. Schenck and M. Stillman) 
-						Trans. Amer. Math. Soc. To appear.
+						Quadratic Gorenstein rings and the Koszul property I</a>
+						<div id = "cite">
+						(with H. Schenck and M. Stillman) Trans. Amer. Math. Soc. To appear.
+						</div>
 						<div class = "container" id = "abstract">
 						<div class = "col-sm-9">
 						We negatively answer a question of Conca, Rossi, and Valla about whether every quadratic Gorenstein ring of regularity 3 is Koszul by using idealization to construct non-Koszul quadratic Gorenstein rings of regularity 3 for every codimension greater than or equal to 9.
@@ -163,9 +190,10 @@
 					</li>
 					<li>
 						<a href ="https://arxiv.org/pdf/1801.00763.pdf">
-							Koszul almost complete intersections
-						</a>  
+						Koszul almost complete intersections</a>
+						<div id = "cite">  
 						J. Algebra 501 (2018), 285-302.
+						</div>
 						<div class="container" id = "abstract">
 						<div class = "col-sm-9">
 						We prove a structure theorem for the defining ideals of Koszul almost complete intersections and, in the process, give an affirmative answer for all such rings to a question of Avramov, Conca, and Iyengar about the Betti numbers of Koszul algebras.
@@ -174,14 +202,15 @@
 					</li>
 					<li>
 						<a href ="papers/Matrix Factorizations and Singularity Categories in Codimension Two.pdf">
-							Matrix factorizations and singularity categories in codimension two
-						</a>
-						Proc. Amer. Math. Soc. 146 (2018), no. 11, 4605–4617.
+						Matrix factorizations and singularity categories in codimension two</a>
+						<div id = "cite">
+						Proc. Amer. Math. Soc. 146 (2018), no. 11, <span style="white-space: nowrap;">4605–4617</span>.
+						</div>
 						<div class = "container" id = "abstract">
 						<div class = "col-sm-9">
 						We show how to functorially connect the Eisenbud-Peeva matrix factorizations of a complete intersection of codimension two to its singularity category by way of the graded matrix factorizations of Burke and Walker.
-					</div>
-					</div>  
+						</div>
+						</div>
 					</li>
 				</ol>
 			</section>

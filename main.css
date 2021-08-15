@@ -20,11 +20,13 @@ html {
 /*----- HEADER/NAV -----*/
 
 header {
+	display: grid;
+	grid-template-columns: auto 1fr auto 1fr;
 	background-color: var(--background);
 	position: fixed;
 	top: 0;
 	left:0;
-	width:100%;
+	width: 100%;
 	z-index: 999;
 	text-align: center;
 	align-items: center;
@@ -39,7 +41,11 @@ header h1 {
 
 .logo {
 	margin: 0;
-	font-size: 3.5rem;
+	grid-column: 3 / span 1;
+}
+
+.nav-toggle {
+	grid-column: 1 / span 1;
 }
 
 

@@ -21,7 +21,7 @@ html {
 
 header {
 	display: grid;
-	grid-template-columns: auto 1fr auto 1fr;
+	grid-template-columns: 100px minmax(300px, 1fr);
 	background-color: var(--background);
 	position: fixed;
 	top: 0;
@@ -41,7 +41,9 @@ header h1 {
 
 .logo {
 	margin: 0;
-	grid-column: 3 / span 1;
+	max-width: 80%;
+	grid-column: 2 / span 1;
+	text-align: center;
 }
 
 .nav-toggle {
@@ -56,6 +58,7 @@ nav {
 	left: 0;
 	background-color: var(--secondary);
 	width: 30%;
+	min-width: 300px;
 	transform: scale(1,0);
 	transform-origin: top;
 	transition: transform 400ms ease-in-out;

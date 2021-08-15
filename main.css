@@ -21,7 +21,7 @@ html {
 
 header {
 	display: grid;
-	grid-template-columns: auto 80% 50px;
+	grid-template-columns: auto 80% 25px;
 	background-color: var(--background);
 	position: fixed;
 	top: 0;

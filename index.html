@@ -19,7 +19,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500" rel="stylesheet">
 
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127860555-1"></script>
 	<script>
@@ -54,8 +53,9 @@
 	\)
 
 </head>
-<body>
-	<header>
+
+<header>
+		<!--
 		<div class="container">
 			<div class="row">
 				<h1 class="col-sm-6" id="header-bar">Matthew Mastroeni</h1>
@@ -67,27 +67,49 @@
 				<h3 class="col-sm-1"> <a href ="MastroeniCV.pdf" id="header-bar">CV</a> </h3>
 			</div>
 		</div>
+		-->
+		<h1 class="logo">Matthew Mastroeni</h1>
+		<input type="checkbox" class="nav-toggle" id="nav-toggle">
+		<nav>
+			<ul>
+				<li id ="jump-to-top"><a href ="#home">Home</a></li>
+				<li><a href ="#research">Research</a></li>
+				<li><a href ="#teaching">Teaching</a></li>
+				<li><a href ="MastroeniCV.pdf">CV</a></li>
+			</ul>
+		</nav>
+		<label for="nav-toggle" class="nav-toggle-label">
+			<span id ="label-menu"></span>
+			<span id="label-X">X</span>
+		</label>
+		<div class="hrule" id="title_bar0">
+			<div class="hrule" id="title_bar1">
+				<div class="hrule" id="title_bar2"></div>
+			</div>
+		</div>
 	</header>
-	<div class="hrule" id="title_bar0"></div>
-	<div class="hrule" id="title_bar1"></div>
-	<div class="hrule" id="title_bar2"></div>
-	
-	<div class="container" id="whoami">
+
+
+<body>
+	<div class="container" id="home">
 		<div class="row">
 
 			<div class="col-sm-9">
 
-				<section>
+				<section >
 					<h3>About Me</h3>
-					<p>I am a Postdoctoral Fellow in the Department of Mathematics at <a href ="https://math.okstate.edu">Oklahoma State University</a> working in commutative algebra.  I received my Ph.D. from the University of Illinois at Urbana-Champaign in 2018, where I was advised by <a href ="http://webhome.auburn.edu/~hks0015/">Hal Schenck</a>.</p>
-				</section>
+					<p>I am a Postdoc Research Associate in the Department of Mathematics at <a href ="https://math.iastate.edu">Iowa State University</a> working in commutative algebra.  Previously, I was a Postdoctoral Fellow at Oklahoma State University.  I received my Ph.D. from the University of Illinois at Urbana-Champaign in 2018, where I was advised by <a href ="http://webhome.auburn.edu/~hks0015/">Hal Schenck</a>.
+					</p>
 
-				<section>
-					<h4>Contact Information</h4>
-					<ul>
-						<li>Email: mmastro "at" okstate "dot" edu</li>
-						<li>Office: 524 Math Sciences Building
-					</ul>
+
+					<div id="contact">
+						<h4>Contact Information</h4>
+						<ul>
+							<li>Email: mmastro "at" iastate "dot" edu</li>
+							<li>Office: 463 Carver Hall
+						</ul>
+					</div>
+
 					<!--
 					Job stuff block. -
 
@@ -99,7 +121,6 @@
 						<ul>
 					</h4>
 					-->
-				
 				</section>
 
 			</div>
@@ -127,12 +148,12 @@
 				<h3>Research</h3> 
 				<p>I am interested in computational and homological aspects of commutative algebra, especially the structure of free resolutions, Koszul algebras, linkage, and Rees algebras. </p>
 
-				<ol id ="papers">
+				<ol class ="papers">
 
 					<li>
 						<a href = "https://arxiv.org/pdf/2010.15331.pdf">
 						The InvariantRing package for Macaulay2</a>
-						<div id = "cite">  
+						<div class = "cite">  
 						(with L. Ferraro, F. Galetto, F. Gandini, H. Huang, and X. Ni.) Submitted.
 						</div>
 						<div class = "container" id = "abstract">
@@ -144,7 +165,7 @@
 					<li>
 						<a href = "papers/The Structure of Koszul Algebras Defined by 4 Quadrics.pdf">
 						The structure of Koszul algebras defined by four quadrics</a>
-						<div id = "cite">  
+						<div class = "cite">  
 						(with P. Mantero) Submitted.
 						</div>
 						<div class = "container" id = "abstract">
@@ -156,7 +177,7 @@
 					<li>
 						<a href = "https://arxiv.org/pdf/1903.08273.pdf">
 						Quadratic Gorenstein rings and the Koszul property II</a>
-						<div id = "cite">  
+						<div class = "cite"> 
 						(with H. Schenck and M. Stillman) Submitted.
 						</div>
 						<div class = "container" id = "abstract">
@@ -168,7 +189,7 @@
 					<li>
 						<a href = "https://arxiv.org/pdf/1910.01674.pdf">
 						Betti numbers of Koszul algebras defined by four quadrics</a>
-						<div id = "cite">  
+						<div class = "cite"> 
 						(with P. Mantero) J. Pure Appl. Algebra. To appear.
 						</div>
 						<div class = "container" id = "abstract">
@@ -180,7 +201,7 @@
 					<li>
 						<a href = "https://arxiv.org/pdf/1903.08265.pdf">
 						Quadratic Gorenstein rings and the Koszul property I</a>
-						<div id = "cite">
+						<div class = "cite"> 
 						(with H. Schenck and M. Stillman) Trans. Amer. Math. Soc. 374 (2021), no. 2, 1077-1093.
 						</div>
 						<div class = "container" id = "abstract">
@@ -191,7 +212,7 @@
 					<li>
 						<a href ="https://arxiv.org/pdf/1801.00763.pdf">
 						Koszul almost complete intersections</a>
-						<div id = "cite">  
+						<div class = "cite"> 
 						J. Algebra 501 (2018), 285-302.
 						</div>
 						<div class="container" id = "abstract">
@@ -203,7 +224,7 @@
 					<li>
 						<a href ="papers/Matrix Factorizations and Singularity Categories in Codimension Two.pdf">
 						Matrix factorizations and singularity categories in codimension two</a>
-						<div id = "cite">
+						<div class = "cite"> 
 						Proc. Amer. Math. Soc. 146 (2018), no. 11, <span style="white-space: nowrap;">4605–4617</span>.
 						</div>
 						<div class = "container" id = "abstract">
@@ -233,7 +254,8 @@
 
 				<h5>Current Semester</h5>
 				<ul>
-					<li>Math 2144: Calculus 1
+					<li>Math 151: Calculus for Business and Social Sciences</li>
+					<li>Math 267: Elementary Differential Equations and Laplace Transforms</li>
 				</ul>
 			
 				<h5>Oklahoma State University</h5>
@@ -241,7 +263,7 @@
 				<table id = "courses" style = "width: 80%">
 					<tr>
 						<td> Math 2144: Calculus 1 </td>
-						<td> Fall 2020, Fall 2018</td>
+						<td> Spring 2021, Fall 2020, Fall 2018</td>
 					</tr>
 					<tr>
 						<td> Math 2153: Calculus 2 </td>

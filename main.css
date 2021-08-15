@@ -3,8 +3,196 @@ html {
 	height: 100%;
 }
 
+
+
+/*----- VARIABLE DECLARATIONS -----*/
+
+:root {
+	--accent: #44D2CB;
+	--background: #010A4D;
+	--header-font: 'Montserrat', 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	--link-hover: #FF5573;
+	--secondary: #377bb5;
+}
+
+
+/*----- HEADER/NAV -----*/
+
+header {
+	background-color: var(--background);
+	position: fixed;
+	top: 0;
+	left:0;
+	width:100%;
+	z-index: 999;
+	text-align: center;
+	align-items: center;
+	color: #FFF;
+}
+
+header h1 {
+	font-family: var(--header-font)
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.logo {
+	margin: 0;
+}
+
+
+nav {
+	position: absolute;
+	text-align: left;
+	top: 100%;
+	left: 0;
+	background-color: var(--secondary);
+	width: 30%;
+	transform: scale(1,0);
+	transform-origin: top;
+	transition: transform 400ms ease-in-out;
+	z-index: 998;
+	opacity: 0.9;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 1em;
+}
+
+nav a {
+	font-size: 2.5rem;
+	text-decoration: none;
+	opacity: 0;
+	transition: opacity 150ms ease-in-out;
+	transition: font-size 100ms ease-in-out;
+	color: #FFF;
+}
+
+nav a:hover {
+	font-size: 2.75rem;
+}
+
+.nav-toggle {
+	display: none;
+}
+
+.nav-toggle:checked ~ nav {
+	display: block;
+	transform: scale(1,1);
+
+}
+
+.nav-toggle:checked ~ nav a {
+	opacity: 1;
+	transition: opacity 250ms ease-in-out 250ms;
+	color: #FFF;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label #label-menu {
+	opacity: 0;
+	transition: opacity 100ms ease-in-out 100ms;
+	color: #FFF;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label #label-X {
+	opacity: 1;
+	transition: opacity 100ms ease-in-out 100ms;
+	color: #FFF;
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+.nav-toggle-label {
+	position: absolute;
+	top:0;
+	left:0;
+	margin-left: 1em;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+
+.nav-toggle-label #label-menu,
+.nav-toggle-label #label-menu:before,
+.nav-toggle-label #label-menu:after {
+	display: block;
+	background-color: white;
+	height: 3.5px;
+	width: 1.75em;
+	border-radius: 2px;
+	position: relative;
+}
+
+.nav-toggle-label #label-menu:before,
+.nav-toggle-label #label-menu:after {
+	content: '';
+	position: absolute;
+	}
+
+.nav-toggle-label #label-menu:before {
+	bottom: 9px;
+	}
+
+.nav-toggle-label #label-menu:after {
+	top: 9px;
+	}
+
+.nav-toggle-label #label-X {
+	position:absolute;
+	opacity: 0;
+	left: 10px;
+}
+
+#title_bar0 {
+	position: absolute;
+	top:100%;
+	width: 100%;
+	height: 1rem;
+	background-color: #57D5C3;
+	opacity: 0.7
+}
+
+#title_bar1 {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 1rem;
+	background-color: var(--secondary);
+	opacity: 0.7
+}
+
+#title_bar2 {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 1rem;
+	background-color: var(--secondary);
+	opacity: 0.2
+}
+
+
+/*----- BODY -----*/
+
+a {
+	font-weight: 900;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
 body {
 	background-color: #DFE1EA;
+	margin: 0;
 	padding: 0;
 	height: 100%;
 	overflow: auto;
@@ -12,36 +200,26 @@ body {
 	font-size: 18px
 }
 
-header {
-	background-color: #010A4D;
-	width:100%;
-	margin-top: 2.5rem;	
+body a {
+	color: #5769D5;
+}
+
+section a:hover {
+	color: var(--link-hover);
 }
 
 .container {
 	padding: 2.5rem;
 }
 
-h1 {
-	font-family: 'Montserrat', 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
 h3 {
 	/*color: #1B735C;*/
-	font-family: 'Montserrat', 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: var(--header-font)
 	margin-bottom: 1.5rem;
 }
 
-#job-stuff {
-	margin-top: 3rem;
-}
-
 h4 {
-	font-family: 'Montserrat', 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif
-}
-
-h4 ul {
-    list-style-type: none;
+	font-family: var(--header-font)
 }
 
 h4 li {
@@ -54,59 +232,13 @@ h4 li:first-child {
     margin-left: -4rem; 
 }
 
-
-ul {
-    list-style-type: square;
-}
-
-#research {
-	background-color: #DFE1EA;
-	width: 100%;
-}
-
-#papers {
-	margin-left: -2rem;
-	margin-top: 2rem;
-}
-
-#papers a {
-	font-family: 'Montserrat', 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	text-decoration: underline;
-}
-
-#papers {
-	counter-reset: paper;
-	list-style: none;
-}
-
-#papers li {
-	padding-bottom: 1rem;
-	counter-increment: paper;
-}
-
-#papers li::before{
-	margin-left: -2rem;
-	padding-right: 1rem;
-	content: "["counter(paper)"]";
+h4 ul {
+    list-style-type: none;
 }
 
 h5 {
 	margin-top: 2rem;
 	font-size: 16px
-}
-
-a {
-	color: #DA7E00;
-	font-weight: 650
-}
-
-a:hover {
-	color: #A05D00;
-    text-decoration: none;
-}
-
-section {
-	padding: 1rem;
 }
 
 .hrule {
@@ -118,46 +250,37 @@ section {
 	right: 0;
 }
 
-header .container {
-	padding-bottom: 0.5rem
+section {
+	padding: 1rem;
 }
 
-#title_bar {
-	width: 100%;
-	padding-bottom: 1rem;
+ul {
+    list-style-type: square;
 }
 
-#title_bar .hrule {
-	background-color: #ffffff;
-	width: 100%;
-	margin-bottom: 0.5rem;
-	padding: 0.1rem;
+
+
+/*----- ABOUT ME -----*/
+
+#contact {
+	margin-top:4rem;
 }
 
-#title_bar0 {
-	background-color: #FF9402;
-	padding: 0.4rem;
-	opacity: 0.7
+#home {
+	margin-top: 7rem;
 }
 
-#title_bar1 {
-	background-color: #377bb5;
-	padding: 0.4rem;
-	opacity: 0.7
+#job-stuff {
+	margin-top: 3rem;
 }
 
-#title_bar2 {
-	background-color: #377bb5;
-	padding: 0.3rem;
-	opacity: 0.2
+#job-stuff h4 a {
+	white-space: nowrap;
 }
 
-#header-bar {
-	color: #FFF;
-}
-
-#photo-frame {
-	text-align: center;
+#job-stuff h4 li {
+	display: inline-block;
+	padding-right: 1rem;
 }
 
 #photo {
@@ -167,27 +290,57 @@ header .container {
     max-height: 300px;
 }
 
-
-h4#job-stuff a {
-	white-space: nowrap;
+#photo-frame {
+	text-align: center;
 }
 
-h4#job-stuff li {
-	display: inline-block;
+
+/*----- RESEARCH -----*/
+
+#abstract {
+	font-size: 16px;
+	color: #606060;
+	padding-top: 1rem;
+	padding-left: 0.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.cite {
+	padding-left: 1.5rem;
+}
+
+
+.papers {
+	margin-left: -2rem;
+	margin-top: 2rem;
+	counter-reset: paper;
+	list-style: none;
+}
+
+.papers a {
+	font-family: 'Montserrat', 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-decoration: none;
+	font-weight: 900;
+}
+
+.papers li {
+	padding-bottom: 1rem;
+	counter-increment: paper;
+}
+
+.papers li::before{
+	margin-left: -2rem;
 	padding-right: 1rem;
+	content: "["counter(paper)"]";
 }
 
-#teaching h3{
-	margin-bottom: 4rem;
+#research {
+	background-color: #DFE1EA;
+	width: 100%;
 }
 
-#teaching h5 {
-	font-weight: bold;
-}
 
-#teaching ul {
-	margin-bottom: 3rem;
-}
+/*----- TEACHING -----*/
 
 #courses {
 	margin-top: 1.5rem;
@@ -207,14 +360,95 @@ h4#job-stuff li {
   background-color: rgba(55, 123, 181,0.1);
 }
 
-#cite {
-	padding-left: 1.5rem;
+#teaching h3{
+	margin-bottom: 4rem;
 }
 
-#abstract {
-	font-size: 16px;
-	color: #606060;
-	padding-top: 1rem;
-	padding-left: 0.5rem;
-	padding-bottom: 1.5rem;
+#teaching h5 {
+	font-weight: bold;
 }
+
+#teaching ul {
+	margin-bottom: 3rem;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+	.nav-toggle-label {
+		display: none;
+	}
+
+	header {
+		display: grid;
+		grid-template-columns: 1fr auto 1fr minmax(700px, 1fr) 1fr;
+		text-align: left;
+	}
+
+	header h1 {
+		padding-left: 3rem;
+	}
+
+	#jump-to-top {
+		display: none;
+	}
+
+	.logo {
+		grid-column: 2 / span 1;
+	}
+
+	nav {
+		all: unset;
+		grid-column: 4 / span 1;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		opacity: 1;
+	}
+
+	nav a{
+		font-size: 2.5rem;
+		opacity: 1;
+		color: #FFF;
+		position: relative;
+	}
+
+	nav a:after {
+		content: '';
+		display: block;
+		height: 4px;
+		background-color: white;
+		position: absolute;
+		left:0;
+		right:0;
+		bottom:-0.25em;
+		transform: scale(0,1);
+		transform-origin: left;
+		transition: transform ease-in-out 250ms;
+	}
+
+	nav a:hover{
+		font-size: 2.5rem;
+		color:#FFF;
+	}
+
+	nav a:hover::after {
+		transform: scale(1,1);
+	}
+
+	nav li {
+		margin-left: 4rem;
+		margin-right: 1rem;
+	}
+
+	nav ul {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+
+

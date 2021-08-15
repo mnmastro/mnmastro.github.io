@@ -1,6 +1,7 @@
 html {
 	overflow: hidden;
 	height: 100%;
+	width: 100%;
 }
 
 
@@ -38,6 +39,7 @@ header h1 {
 
 .logo {
 	margin: 0;
+	font-size: 3.5rem;
 }
 
 
@@ -374,7 +376,7 @@ ul {
 
 
 
-
+/*----- DESKTOP SETTINGS -----*/
 
 
 

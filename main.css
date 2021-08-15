@@ -21,7 +21,7 @@ html {
 
 header {
 	display: grid;
-	grid-template-columns: auto minmax(80%, 1fr);
+	grid-template-columns: auto minmax(auto, 80%) 50px;
 	background-color: var(--background);
 	position: fixed;
 	top: 0;

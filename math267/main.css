@@ -279,111 +279,16 @@ ul {
 	margin-top: 7rem;
 }
 
-#job-stuff {
-	margin-top: 3rem;
-}
-
-#job-stuff h4 a {
-	white-space: nowrap;
-}
-
-#job-stuff h4 li {
-	display: inline-block;
-	padding-right: 1rem;
-}
-
-#photo {
-    height: auto; 
-    width: auto; 
-    max-width: 300px; 
-    max-height: 300px;
-}
-
-#photo-frame {
-	text-align: center;
-}
-
-
-/*----- RESEARCH -----*/
-
-#abstract {
-	font-size: 16px;
-	color: #606060;
-	padding-top: 1rem;
-	padding-left: 0.5rem;
-	padding-bottom: 1.5rem;
-}
-
-.cite {
-	padding-left: 1.5rem;
-}
-
-
-.papers {
-	margin-left: -2rem;
-	margin-top: 2rem;
-	counter-reset: paper;
-	list-style: none;
-}
-
-.papers a {
-	font-family: 'Montserrat', 'Julius Sans One', Optima, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	text-decoration: none;
-	font-weight: 900;
-}
-
-.papers li {
-	padding-bottom: 1rem;
-	counter-increment: paper;
-}
-
-.papers li::before{
-	margin-left: -2rem;
-	padding-right: 1rem;
-	content: "["counter(paper)"]";
-}
-
-#research {
-	background-color: #DFE1EA;
-	width: 100%;
-}
-
-
-/*----- TEACHING -----*/
-
-#courses {
-	margin-top: 1.5rem;
-	margin-bottom: 4rem;
-}
-
-#courses td {
-	border: 1px solid black;
-	padding: 1rem;
-}
-
-#courses td:first-child {
-	width: 50%;
-}
-
-#courses tr:nth-child(odd) {
-  background-color: rgba(55, 123, 181,0.1);
-}
-
-#teaching h3{
-	margin-bottom: 4rem;
-}
-
-#teaching h5 {
-	font-weight: bold;
-}
-
-#teaching ul {
-	margin-bottom: 3rem;
-}
-
-
 
 /*----- COURSES -----*/
+
+#worksheets h3 {
+	margin-bottom: 4rem;
+}
+
+#quizzes h3 {
+	margin-bottom: 4rem;
+}
 
 #solutions {
 	margin-top: 1.5rem;
@@ -400,9 +305,16 @@ ul {
 	width: 20%;
 }
 
-#solutions tr:nth-child(odd) {
+#solutions tr:nth-child(even) {
   background-color: rgba(55, 123, 181,0.1);
 }
+
+#solutions tr:first-child {
+	background-color: var(--background);
+	color: white;
+	font-weight: bold;
+}
+
 
 /*----- DESKTOP SETTINGS -----*/
 
@@ -422,12 +334,6 @@ ul {
 	header h1 {
 		padding-left: 3rem;
 	}
-
-/*
-	#jump-to-top {
-		display: none;
-	}
-*/
 
 	.logo {
 		grid-column: 2 / span 1;

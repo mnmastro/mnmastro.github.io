@@ -279,12 +279,30 @@ ul {
 	margin-top: 7rem;
 }
 
+#horizontal_table {
+	display: none;
+}
+
+#office_hours h4 {
+	margin-top: 4rem;
+}
+
+#office_hours table {
+	margin-top: -1rem;
+}
+
+#office_hours td {
+	border: 1px solid black;
+	padding: 1rem;
+	text-align: center;
+}
+
+#vertical_table {
+	width: 70%
+}
+
 
 /*----- COURSES -----*/
-
-#worksheets h3 {
-	margin-bottom: 4rem;
-}
 
 #quizzes h3 {
 	margin-bottom: 4rem;
@@ -315,6 +333,10 @@ ul {
 	font-weight: bold;
 }
 
+#worksheets h3 {
+	margin-bottom: 4rem;
+}
+
 
 /*----- DESKTOP SETTINGS -----*/
 
@@ -322,6 +344,14 @@ ul {
 
 @media screen and (min-width: 1000px) {
 	.nav-toggle-label {
+		display: none;
+	}
+
+	#horizontal_table {
+		display: initial;
+	}
+
+	#vertical_table {
 		display: none;
 	}
 

@@ -304,30 +304,48 @@ ul {
 
 /*----- COURSES -----*/
 
+#course_sections {
+	margin: -1.1rem;
+	text-align: center;
+}
+
+#course_sections td {
+	border: 1px solid black;
+	padding: 1rem;
+}
+
+#course_sections tr:nth-child(even) {
+	background-color: : inherit;
+}
+
+#course_sections tr:first-child {
+	background-color: inherit;
+}
+
 #quizzes h3 {
 	margin-bottom: 4rem;
 }
 
-#solutions {
+.solutions {
 	margin-top: 1.5rem;
 	margin-bottom: 4rem;
 	text-align: center;
 }
 
-#solutions td {
+.solutions td {
 	border: 1px solid black;
 	padding: 1rem;
 }
 
-#solutions td:first-child {
+.solutions td:first-child {
 	width: 20%;
 }
 
-#solutions tr:nth-child(even) {
+.solutions tr:nth-child(even) {
   background-color: rgba(55, 123, 181,0.1);
 }
 
-#solutions tr:first-child {
+.solutions tr:first-child {
 	background-color: var(--background);
 	color: white;
 	font-weight: bold;

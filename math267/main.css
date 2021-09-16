@@ -314,13 +314,10 @@ ul {
 	padding: 1rem;
 }
 
-#course_sections tr:nth-child(even) {
-	background-color: : inherit;
+#course_sections tr {
+	all: revert;
 }
 
-#course_sections tr:first-child {
-	background-color: inherit;
-}
 
 #quizzes h3 {
 	margin-bottom: 4rem;

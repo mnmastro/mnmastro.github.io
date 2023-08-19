@@ -271,8 +271,20 @@ ul {
 
 /*----- ABOUT ME -----*/
 
+#about-me {
+	margin-top: 4rem;
+}
+
 #contact {
 	margin-top:4rem;
+}
+
+#contact ul {
+	margin-top: 2rem;
+}
+
+#contact li {
+	margin-top: 1rem;
 }
 
 #home {
@@ -292,16 +304,66 @@ ul {
 	padding-right: 1rem;
 }
 
+.img-thumbnail {
+	border:none;
+}
+
 #photo {
     height: auto; 
     width: auto; 
-    max-width: 300px; 
-    max-height: 300px;
+}
+
+#photo.img-thumbnail {
+   padding: 5px;
 }
 
 #photo-frame {
 	text-align: center;
 }
+
+#display-frame {
+  background-color: rgba(55,123,181,0.3);
+  padding: 10px;
+  margin:auto;
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#video {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 45%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  background-color: var(--background);
+}
+
+/* Then style the video to fit in the container div with full height and width */
+.responsive-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px;
+}
+
+.caption {
+	text-align: center;
+	width:80%;
+	font-style: italic;
+	margin: auto;
+	font-size: 85%;
+}
+
 
 
 /*----- RESEARCH -----*/
@@ -316,6 +378,7 @@ ul {
 
 .cite {
 	padding-left: 1.5rem;
+	max-width: 80%;
 }
 
 
@@ -348,6 +411,17 @@ ul {
 	width: 100%;
 }
 
+#research p {
+	margin-top: 3rem;
+}
+
+#research h4 {
+	margin-top: 2rem;
+}
+
+#research .caption p {
+	margin-top: 15px;
+}
 
 /*----- TEACHING -----*/
 
